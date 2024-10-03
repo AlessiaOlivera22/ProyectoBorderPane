@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Menú 1" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="35.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </Button>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Menú 2">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </Button>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Menú 3">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="25.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Menú 4">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="30.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <TextField alignment="CENTER" text="Menú del Día" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextArea prefHeight="100.0" prefWidth="100.0" text="Menú 1&#10;&#10;PRIMERO:&#10;&#10;-Arroz&#10;&#10;SEGUNDO:&#10;&#10;-Bacalao" />
+            <TextArea prefHeight="200.0" prefWidth="200.0" text="Menú 3&#10;&#10;PRIMERO:&#10;&#10;-Carne con Tomate&#10;&#10;SEGUNDO:&#10;&#10;-Calamares" GridPane.rowIndex="1" />
+            <TextArea prefHeight="157.0" prefWidth="151.0" text="Menú 4&#10;&#10;PRIMERO:&#10;&#10;-Almejas en Salsa&#10;&#10;SEGUNDO:&#10;&#10;-Choto" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextArea prefHeight="200.0" prefWidth="200.0" text="Menú 2&#10;&#10;PRIMERO:&#10;&#10;-Migas&#10;&#10;SEGUNDO:&#10;&#10;-Bacalao" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+   </center>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" text="Cafe">
+               <VBox.margin>
+                  <Insets left="25.0" top="100.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" text="Postre">
+               <VBox.margin>
+                  <Insets left="25.0" top="35.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </right>
+   <bottom>
+      <Button mnemonicParsing="false" text="Pedir" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
